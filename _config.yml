@@ -84,7 +84,7 @@ analytics:
 # Site Author
 author:
   name             : "Ashley Franzen"
-  avatar           : "/assets/images/avatar.jpg"
+  avatar           : "me.jpg"
   bio              : "Writer & Language Service Specialist"
   location         : "Bonn, Germany"
   email            : "Ashley@Franzen.io" 
@@ -250,3 +250,4 @@ defaults:
       comments: # true
       share: true
       related: true
+destination: /var/www/html/ashley
