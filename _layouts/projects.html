@@ -1,0 +1,33 @@
+---
+layout: single
+---
+<style>
+img.logo {
+   max-width: 200px;
+}
+table.borderless, table.borderless tr, table.borderless tr td {
+  border: none;
+}
+td.center {
+  text-align: center;
+}
+td h3 {
+  margin-top: 0.5em;
+}
+</style>
+
+{{ content }}
+
+<table class="borderless">
+{% for project in site.projects %}
+  <tr>
+    <td class="center">
+      <a href="{{ project.link }}"><img class="logo" src="{{ page.url }}{{ project.logo }}"/></a>
+    </td>
+    <td>  
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.content }}</p>
+    </td>
+  </tr>
+{% endfor %}
+</table>
