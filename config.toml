@@ -2,6 +2,9 @@ languageCode = "en-us"
 title = "Ashley Franzen"
 baseurl = "https://ashley.franzen.io/"
 
+[permalinks]
+  static = "/:filename/"
+
 [params]
   name = "Ashley Franzen"
   description = "Writer & Language Service Specialist"
