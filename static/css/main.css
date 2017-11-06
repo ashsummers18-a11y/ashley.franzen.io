@@ -1706,15 +1706,15 @@
 			width: 100%;
 		}
 
-		.image.avatar {
-			width: 128px;
-			height: 128px;
+		.image.avatar48 {
+			width: 48px;
+			height: 48px;
+			background: #f00;
 		}
 
-			.image.avatar img {
-				width: 128px;
-				height: 128px;
-        border-radius: 50%;
+			.image.avatar48 img {
+				width: 48px;
+				height: 48px;
 			}
 
 		.image.fit {
@@ -1996,7 +1996,7 @@
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 475px;
+		width: 375px;
 	}
 
 		#header .top {
@@ -2038,7 +2038,7 @@
 	#logo {
 		position: relative;
 		margin: 1.75em 1.5em 1.5em 1.5em;
-		min-height: 128px;
+		min-height: 48px;
 		cursor: default;
 	}
 
@@ -2107,13 +2107,10 @@
 					color: #e27689;
 				}
 
-  #portfolio img {
-    max-width: 350px;
-  }
 /* Footer */
 
 	#footer {
-		margin-left: 475px;
+		margin-left: 375px;
 		text-align: center;
 		background-color: #dce3e2;
 		padding: 1em 0 2em 0;
@@ -2561,35 +2558,3 @@
 				}
 
 	}
-
-  @media screen and (max-width: 737px) {
-    .image.avatar {
-      width: 48px;
-      height: 48px;
-    }
-
-      .image.avatar img {
-        width: 48px;
-        height: 48px;
-      }
-
-      #logo {
-        min-height: 48px;
-      }
-  }
-
-  @media screen and (max-width: 961px) {
-    .image.avatar {
-      width: 64px;
-      height: 64px;
-    }
-
-      .image.avatar img {
-        width: 64px;
-        height: 64px;
-      }
-
-      #logo {
-        min-height: 64px;
-      }
-  }
