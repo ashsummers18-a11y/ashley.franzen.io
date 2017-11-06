@@ -105,15 +105,19 @@
 							{{partial "portfolio.html" | print | markdownify }}
 
               <div class="row">
-                {{ range (where .Data.Pages "Section" "portfolio") }}
-                    <div class="4u 12u$(mobile)">
+                {{ $portfolio := where .Data.Pages "Section" "portfolio" }}
+                {{ range $column := slice "left" "middle" "right" }}
+                  <div class="4u 12u$(mobile)">
+                    {{ $subsection := where $portfolio "Params.column" $column }}
+                    {{ range sort $subsection ".Weight" }}
                         <article class="item">
-                          <img src="portfolio/{{ .Params.logo }}" />
+                          <img class="image" src="portfolio/{{ .Params.logo }}" />
                           <header>
                             <h3>{{ .Title }}</h3>
                             <p>{{ .Summary }}</p>
                           </header>
                         </article>
+                    {{ end }}
                     </div>
                 {{ end }}
               </div>
