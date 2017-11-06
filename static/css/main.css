@@ -1555,7 +1555,7 @@
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
-		line-height: 1.75em;
+		line-height: 1.5em;
 		color: #888;
 	}
 
@@ -1673,6 +1673,10 @@
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
 	}
+
+  .row p {
+    padding: 5px
+  }
 
 	br.clear {
 		clear: both;
@@ -2060,7 +2064,7 @@
 		}
 
 		#logo .image {
-			position: absolute;
+			float: left;
 			left: 0;
 			top: 0;
 		}
@@ -2197,6 +2201,28 @@
 			#main > section.four {
 				background-color: #e8edec;
 			}
+
+  /* Special sections */
+
+  #main li:before {
+    font-family: 'FontAwesome';
+    content: '\f046';
+    margin-right: 5px;
+  }
+
+  #portfolio img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #testimonials article header {
+    padding: 10px;
+  }
+
+  #testimonials .icon {
+    padding: 5px;
+  }
+
 
 /* Wide */
 
