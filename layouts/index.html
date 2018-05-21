@@ -1,30 +1,29 @@
 {{ define "title" }}
-{{ .Site.Title }}
+  {{ .Site.Title }}
 {{ end }}
 
 {{ define "main" }}
-  <section class="banner style1 orient-right content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-left">
-	  <div class="content">
+  <section class="banner style1 orient-right content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-left">
+    <div class="content major">
       <header>
         <h1>{{ .Title }}</h1>
         <p>{{ .Params.tagline }}</p>
       </header>
-      
+     
       {{ .Content }}
 
-      <span class="align-center">
-        {{ partial "socialmedia.html" . }}
-      </span>
+      {{ partial "socialmedia.html" . }}
 
-      <div class="align-center" style="position: absolute; bottom: 0.25em; right: 1em;">
+      <div style="position: absolute; bottom: 0.25em; right: 1em;">
         {{ partial "attribution.html" . }}
       </div>
     </div>
-		<div class="image">
-		  <img src="/images/me.jpg" alt="Picture of Ashley Franzen" />
-		</div>
-	</section>
+    <div class="image">
+      <img src="/images/me.jpg" alt="Picture of Ashley Franzen" />
+    </div>
+  </section>
 {{ end }}
+
 {{ define "footer" }}
 <!-- No Footer here! -->
 {{ end }}

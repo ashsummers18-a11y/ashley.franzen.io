@@ -3,5 +3,5 @@ title: Visioneers
 date: 2015-10-12
 ---
 
-[Let's Have Lunch - Ten Typical Dishes to Try Whilest Volunteering in Guatamala](https://www.visioneers.io/single-post/2015/10/12/Let%E2%80%99s-Have-Lunch-Ten-Typical-Dishes-to-Try-Whilst-Volunteering-in-Guatemala)
+[Let's Have Lunch - Ten Typical Dishes to Try Whilst Volunteering in Guatamala](https://www.visioneers.io/single-post/2015/10/12/Let%E2%80%99s-Have-Lunch-Ten-Typical-Dishes-to-Try-Whilst-Volunteering-in-Guatemala)
 
