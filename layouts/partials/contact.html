@@ -1,0 +1,49 @@
+<form method="post" action="#">
+  <div class="field half first">
+    <label for="name">Name</label>
+    <input name="name" id="name" value="" type="text">
+  </div>
+  <div class="field half">
+    <label for="email">Email</label>
+    <input name="email" id="email" value="" type="email">
+  </div>
+  <div class="field">
+    <label for="department">Department</label>
+    <div class="select-wrapper">
+      <select name="department" id="department">
+        <option value="">- Category -</option> 
+        <option value="1">Manufacturing</option>
+        <option value="2">Shipping</option>
+        <option value="3">Administration</option>
+        <option value="4">Human Resources</option>
+      </select>
+    </div>
+  </div>
+  <div class="field third first">
+    <input id="priority-low" name="priority" checked="" type="radio">
+    <label for="priority-low">Low Priority</label>
+  </div>
+  <div class="field third">
+    <input id="priority-normal" name="priority" type="radio">
+    <label for="priority-normal">Normal Priority</label>
+  </div>
+  <div class="field third">
+    <input id="priority-high" name="priority" type="radio">
+    <label for="priority-high">High Priority</label>
+  </div>
+  <div class="field">
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows="6"></textarea>
+  </div>
+  <div class="field half first">
+    <input id="copy" name="copy" type="checkbox">
+    <label for="copy">Email me a copy of this message</label>
+  </div>
+  <div class="field half">
+    <input id="human" name="human" checked="" type="checkbox">
+    <label for="human">I am a human and not a robot</label>
+  </div>
+  <ul class="actions">
+    <li><input name="submit" id="submit" value="Send Message" type="submit"></li>
+  </ul>
+</form>

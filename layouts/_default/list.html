@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <section class="wrapper style1 align-left">
+    <div class="inner medium">
+	        
+	  <span class="align-center">
+		  {{ partial "button_back.html" . }}
+
+		  <h1>{{ .Title }}</h1>
+
+		  <p>{{ .Content }}</p>
+	  </span>
+
+     <dl>
+     {{ range .Pages }}
+       <dt>{{ .Title }} &ndash; {{ .Date.Format "2006" }}</dt>
+         <dd>
+           {{ .Content }}
+         </dd>
+      {{ end }}
+      </dl>
+
+    <span class="align-center">
+      {{ partial "button_back.html" . }}
+    </span>
+
+    </div>
+  </section>
+{{ end }}

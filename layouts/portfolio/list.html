@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <section class="wrapper style1 align-center">
+    <div class="inner large">
+
+        {{ partial "button_back.html" . }}
+
+        <h1>{{ .Title }}</h1>
+
+        <p>{{ .Content }}</p>
+
+        <div class="index align-left">
+        {{ range .Pages }}
+          <section>
+              <header>
+                  <h3>{{ .Title }}</h3>
+              </header>
+              <div class="content">
+                  {{ .Content }}
+              </div>
+          </section>
+        {{ end }}
+        </div>
+
+        {{ partial "button_back.html" . }}
+
+    </div>
+  </section>
+{{ end }}
