@@ -12,6 +12,10 @@
      
       {{ .Content }}
 
+      {{ partial "testimonials.html" . }}
+
+      <p><strong>{{ .Params.conclusion }}</strong></p>
+
       {{ partial "socialmedia.html" . }}
 
       <div style="position: absolute; bottom: 0.25em; right: 1em;">

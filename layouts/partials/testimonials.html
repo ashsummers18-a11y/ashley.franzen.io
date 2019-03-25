@@ -1,0 +1,30 @@
+<section class="testimonials">
+  <div class="box">
+    {{ range .Site.Data.testimonials }}
+    <div class="testimonial">
+      <p><q>{{ .text | markdownify }}</q></p>
+      <h4>{{ .author }}</h4>
+      <h5>{{ .position }}</h5>
+    </div>
+    {{ end }}
+
+    <a class="prev">
+      <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="next">
+      <i class="fa fa-angle-right"></i>
+    </a>
+  </div>
+
+  <div class="dots">
+    {{ range .Site.Data.testimonials }}
+    <span class="dot"></span>
+    {{ end }}
+  </div>
+</section>
+
+<noscript>
+  <style>
+    .prev, .next, .dots { display: none; }
+  </style>
+</noscript>

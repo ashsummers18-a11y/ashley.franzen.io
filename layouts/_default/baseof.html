@@ -4,7 +4,9 @@
 	  <title>{{ block "title" . }} {{ .Site.Title }} &ndash; {{ .Page.Title }} {{ end }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="/assets/css/main.css" />
+    {{ $options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}
+    {{ $style := resources.Get "sass/main.scss" | toCSS $options | fingerprint }}
+		<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" />
 	</head>
 	<body>
 
@@ -42,12 +44,22 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script src="/assets/js/jquery.scrollex.min.js"></script>
-			<script src="/assets/js/jquery.scrolly.min.js"></script>
-			<script src="/assets/js/skel.min.js"></script>
-			<script src="/assets/js/util.js"></script>
-			<script src="/assets/js/main.js"></script>
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/jquery.scrollex.min.js"></script>
+			<script src="/js/jquery.scrolly.min.js"></script>
+			<script src="/js/skel.min.js"></script>
 
+      {{ $utils := resources.Get "js/util.js" }}
+      {{ $main  := resources.Get "js/main.js" }}
+			{{ $script := slice $utils $main | resources.Concat "js/bundle.js" | minify | fingerprint }}
+			<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+
+			{{ $testimonials := resources.Get "js/jquery.testimonials.js" | minify | fingerprint }}
+			<script src="{{ $testimonials.RelPermalink }}" integrity="{{ $testimonials.Data.Integrity }}"></script>
+			<script>
+				$(function() {
+					$(".testimonials").testimonials();
+				});
+			</script>
 	</body>
 </html>
