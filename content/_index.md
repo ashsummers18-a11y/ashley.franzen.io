@@ -9,4 +9,3 @@ She competently crafts and innovates with words, using creative writing techniqu
 
 Her work has been published by _University&nbsp;of&nbsp;Copenhagen_, _Fine&nbsp;Finish_, _Remineralize the Earth_, _BlueandGreenTomorrow.com_, _BrainsBeautyandBabies.com_ and other publications.
 
-You can find her portfolio [here](/portfolio).
