@@ -1,11 +1,10 @@
 baseURL: "https://ashley.franzen.io/"
 languageCode: "en-us"
-title: "Ashley N. Franzen"
+title: "Ashley N. Franzen, MFA"
 
 disableKinds: [ "RSS", "sitemap", "taxonomy", "taxonomyTerm" ]
 
 params:
-  name: "Ashley Franzen"
   description: "Freelance Content Writer"
   keywords: [ "writer", "journalist", "copywriter", "photographer", "freelancer", "author", "novelist", "travel", "wellness", "lifestyle", "science", "tech", "environment", "sustainability", "food", "beverage", "beer" ]
   copyright: "by Ashley Franzen"

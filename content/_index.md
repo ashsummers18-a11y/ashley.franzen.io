@@ -1,5 +1,4 @@
 ---
-title: Ashley N. Franzen, MFA
 tagline: Connecting the world through words
 conclusion: Need an engaging and impactful content or copy writer? Let’s collaborate!
 ---
