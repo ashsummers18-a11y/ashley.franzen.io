@@ -1,9 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>{{ block "title" . }} {{ .Site.Title }} &ndash; {{ .Page.Title }} {{ end }}</title>
+		<title>{{ block "title" . }}{{ .Site.Title }} &ndash; {{ .Page.Title }}{{ end }}</title>
 		<meta name="description" content="{{ .Site.Params.description }}" />
 		<meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}" />
+
+		<meta property="og:title" content="{{ block "ogtitle" . }}{{ .Site.Title }} - {{ .Page.Title }}{{ end }}" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="{{ .Site.BaseURL }}" />
+		<meta property="og:image" content="{{ .Site.BaseURL }}/images/me.jpg" />
+		<meta property="og:description" content="{{ .Site.Params.description }}" />
+
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		{{ $options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}
