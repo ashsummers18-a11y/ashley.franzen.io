@@ -7,5 +7,5 @@ Ashley N. Franzen is a freelance journalist, copywriter, and photographer based 
 
 She competently crafts and innovates with words, using creative writing techniques to shape and evolve the narrative and share your story.
 
-Her work has been published by _University&nbsp;of&nbsp;Copenhagen_, _Fine&nbsp;Finish_, _Remineralize the Earth_, _BlueandGreenTomorrow.com_, _BrainsBeautyandBabies.com_ and other publications.
+Her work has been published by _The Verge_, _The Local_, _University&nbsp;of&nbsp;Copenhagen_, _BlueandGreenTomorrow.com_ and other publications.
 
