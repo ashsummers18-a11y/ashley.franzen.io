@@ -6,8 +6,8 @@ disableKinds: [ "RSS", "sitemap", "taxonomy", "taxonomyTerm" ]
 
 params:
   name: "Ashley Franzen"
-  description: "Writer & Language Service Specialist"
-  keywords: [ "writer", "journalist", "copywriter", "photographer", "freelancer", "author", "novelist", "travel", "wellness", "lifestyle", "tech", "environment", "sustainability", "food", "beverage", "beer" ]
+  description: "Freelance Content Writer"
+  keywords: [ "writer", "journalist", "copywriter", "photographer", "freelancer", "author", "novelist", "travel", "wellness", "lifestyle", "science", "tech", "environment", "sustainability", "food", "beverage", "beer" ]
   copyright: "by Ashley Franzen"
   social:
     - label: "Email"
